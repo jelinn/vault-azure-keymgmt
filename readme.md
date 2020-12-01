@@ -82,12 +82,12 @@ vault write -f keymgmt/key/rsa-1/rotate
 
 ### Enable / Disable Key Versions 
 ```
-vault write keymgmt/key/example-key min_enabled_version=2
+vault write keymgmt/key/rsa-2 min_enabled_version=2
 ```
 
 ### Delete a key from the KMS Provider
 ```
-vault delete keymgmt/kms/example-kms/key/example-key
+vault delete keymgmt/kms/keyvault/key/rsa-1
 ```
 
 
