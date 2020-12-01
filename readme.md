@@ -1,8 +1,10 @@
 ## HashiCorp Vault Key Management Secrets Engine
 
-### This repository demonstrates the Vault Key Management Secrets Engine. Note: Vault Enterprise 1.6 and the Advanced Data Protection Module are required for this secrets engine. 
+
 
 ### Background: Cloud services often require enycrption keys stored in the providers Key Management System. Many highly regulated companies require the ability to maintain control of key material and require a consistent workflow to distrubute and manage the lifecycle of keys on various cloud services.  
+
+This repository demonstrates the Vault Key Management Secrets Engine. **Note: Vault Enterprise 1.6 and the Advanced Data Protection Module are required for this secrets engine.**
 
 
 ### Setup: 
