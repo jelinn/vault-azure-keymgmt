@@ -64,6 +64,16 @@ vault list keymgmt/kms/keyvault/key/
 vault write -f keymgmt/key/rsa-1/rotate
 ```
 
+### Enable / Disable Key Versions 
+```
+vault write keymgmt/key/example-key min_enabled_version=2
+```
+
+### Delete a key from the KMS Provider
+```
+vault delete keymgmt/kms/example-kms/key/example-key
+```
+
 
 ### Reference:
  https://learn.hashicorp.com/tutorials/vault/key-management-secrets
