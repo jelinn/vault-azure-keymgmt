@@ -8,6 +8,16 @@ This repository demonstrates the Vault Key Management Secrets Engine. **Note: Va
 
 
 ### Setup: 
+Steps:  
+1. Configure Azure Key Vault 
+2. Configure HashiCorp Vault
+    - Enable Key Management Secrets Engine
+    - Create a Key
+    - Distrubute a key to Azure KMS
+    - Rotate key
+    - Delete key from Azure KMS
+
+
 1. Configure Azure Key Vault - The main.tf file in this repository uses Terraform to configure a Service Principal and a Key Vault in Azure and configures proper permissions for this demo. This Terraform code will provide outputs for credentials that we will use to configure HashiCorp Vault to talk to Azure Key Vault. 
 
 ```
@@ -23,7 +33,7 @@ terraform apply
 vault secrets enable keymgmt
 ```
 
-### Write RSA keys to the secrets engine
+### Create a Key 
 
 ```
 vault write keymgmt/key/rsa-1 type="rsa-2048"
