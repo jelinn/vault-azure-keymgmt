@@ -63,9 +63,14 @@ vault write keymgmt/kms/keyvault/key/rsa-2 \
     protection="hsm"
 ```
 
-### Use the Vault CLI to verrify the keys have been distrubuted to Azure Key Vault 
+### Use the Vault CLI to verify the keys have been distrubuted to Azure Key Vault 
 ```
 vault list keymgmt/kms/keyvault/key/
+```
+
+### Use the Vault CLI to read keys 
+```
+vault read -format=json keymgmt/key/rsa-1 | jq
 ```
 
 ### Use the Azure UI to verify the keys and their purpose. 
