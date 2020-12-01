@@ -17,6 +17,7 @@ Steps:
     - Rotate key
     - Delete key from Azure KMS
 
+<hr>
 
 1. Configure Azure Key Vault - The main.tf file in this repository uses Terraform to configure a Service Principal and a Key Vault in Azure and configures proper permissions for this demo. This Terraform code will provide outputs for credentials that we will use to configure HashiCorp Vault to talk to Azure Key Vault. 
 
