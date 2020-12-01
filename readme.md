@@ -76,5 +76,8 @@ vault delete keymgmt/kms/example-kms/key/example-key
 
 
 ### Reference:
+ 
  https://learn.hashicorp.com/tutorials/vault/key-management-secrets
+ 
+ 
  https://www.vaultproject.io/docs/secrets/key-management
