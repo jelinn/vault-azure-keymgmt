@@ -52,7 +52,7 @@ vault write keymgmt/kms/keyvault \
     credentials=tenant_id="<<FromTFOutput>>"
 ```
 
-### Distribute Keys to Vault
+### Distribute Keys to Azure Key Vault
 ```
 vault write keymgmt/kms/keyvault/key/rsa-1 \
     purpose="encrypt,decrypt" \
